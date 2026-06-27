@@ -297,6 +297,7 @@ function Dashboard({
             <div className="mt-5 flex flex-wrap gap-2">
               <Button
                 onClick={onShare}
+                aria-label="Share your BaseRep score on X"
                 className="rounded-xl bg-gradient-to-r from-base-blue to-base-violet"
               >
                 <Share2 className="mr-2 h-4 w-4" /> Share
