@@ -53,6 +53,29 @@ export const Route = createFileRoute("/")({
         content:
           "Your trusted reputation layer for the Base ecosystem. Analyze, score, and showcase your onchain identity.",
       },
+      { property: "og:url", content: "https://base-rep-score.lovable.app/" },
+      { property: "og:type", content: "website" },
+    ],
+    links: [
+      { rel: "canonical", href: "https://base-rep-score.lovable.app/" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: "BaseRep",
+          url: "https://base-rep-score.lovable.app/",
+          description:
+            "Onchain reputation and profile scoring system for wallets on the Base network.",
+          publisher: {
+            "@type": "Organization",
+            name: "BaseRep",
+            url: "https://base-rep-score.lovable.app/",
+          },
+        }),
+      },
     ],
   }),
   component: HomePage,
