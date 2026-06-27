@@ -87,6 +87,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:site_name", content: "BaseRep" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
+      { property: "og:title", content: "BaseRep — Onchain Reputation for Base" },
+      { name: "twitter:title", content: "BaseRep — Onchain Reputation for Base" },
+      { name: "description", content: "Base Rep Score provides an onchain reputation and profile scoring system for the Base network." },
+      { property: "og:description", content: "Base Rep Score provides an onchain reputation and profile scoring system for the Base network." },
+      { name: "twitter:description", content: "Base Rep Score provides an onchain reputation and profile scoring system for the Base network." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/7cf4c172-d9b8-4d8a-a79e-7cbc09154994/id-preview-4214c4e3--de7461e7-de85-4858-a05e-c20a7d9d92c9.lovable.app-1782563432105.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/7cf4c172-d9b8-4d8a-a79e-7cbc09154994/id-preview-4214c4e3--de7461e7-de85-4858-a05e-c20a7d9d92c9.lovable.app-1782563432105.png" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
