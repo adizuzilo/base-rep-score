@@ -152,6 +152,7 @@ function HomePage() {
                 toast.success("Address copied");
               }}
               className="glass flex items-center gap-2 rounded-xl px-3 py-2 text-sm transition hover:scale-[1.02]"
+              aria-label="Copy wallet address"
             >
               <Wallet className="h-4 w-4" />
               <span className="font-mono">{shorten(address)}</span>
