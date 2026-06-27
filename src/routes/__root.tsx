@@ -77,14 +77,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "BaseRep — Onchain Reputation for Base" },
+      {
+        name: "description",
+        content:
+          "BaseRep is the onchain reputation layer for the Base network. Analyze your wallet, get a 0–1000 score, earn badges, and showcase your identity.",
+      },
+      { name: "author", content: "BaseRep" },
+      { property: "og:site_name", content: "BaseRep" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
