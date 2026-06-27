@@ -53,6 +53,29 @@ export const Route = createFileRoute("/")({
         content:
           "Your trusted reputation layer for the Base ecosystem. Analyze, score, and showcase your onchain identity.",
       },
+      { property: "og:url", content: "https://base-rep-score.lovable.app/" },
+      { property: "og:type", content: "website" },
+    ],
+    links: [
+      { rel: "canonical", href: "https://base-rep-score.lovable.app/" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: "BaseRep",
+          url: "https://base-rep-score.lovable.app/",
+          description:
+            "Onchain reputation and profile scoring system for wallets on the Base network.",
+          publisher: {
+            "@type": "Organization",
+            name: "BaseRep",
+            url: "https://base-rep-score.lovable.app/",
+          },
+        }),
+      },
     ],
   }),
   component: HomePage,
@@ -129,6 +152,7 @@ function HomePage() {
                 toast.success("Address copied");
               }}
               className="glass flex items-center gap-2 rounded-xl px-3 py-2 text-sm transition hover:scale-[1.02]"
+              aria-label="Copy wallet address"
             >
               <Wallet className="h-4 w-4" />
               <span className="font-mono">{shorten(address)}</span>
@@ -273,6 +297,7 @@ function Dashboard({
             <div className="mt-5 flex flex-wrap gap-2">
               <Button
                 onClick={onShare}
+                aria-label="Share your BaseRep score on X"
                 className="rounded-xl bg-gradient-to-r from-base-blue to-base-violet"
               >
                 <Share2 className="mr-2 h-4 w-4" /> Share

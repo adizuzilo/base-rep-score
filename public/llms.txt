@@ -1,0 +1,9 @@
+# BaseRep
+
+> Onchain reputation and profile scoring for wallets on the Base network. Connect a Base wallet to receive a 0–1000 reputation score from transactions, holdings, wallet age, and ecosystem participation.
+
+BaseRep analyzes Base mainnet wallet activity and turns it into a verifiable reputation score, achievement badges, and a community leaderboard ranking.
+
+## Pages
+
+- [Home](/): Connect a Base wallet and view your reputation score, activity analytics, badges, and leaderboard ranking.
