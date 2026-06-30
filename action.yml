@@ -1,0 +1,8 @@
+name: 'Base Rep Score'
+description: 'Your action description here'
+runs:
+  using: 'docker'
+  image: 'docker://...'
+  # or
+  using: 'node20'
+  main: 'index.js'
